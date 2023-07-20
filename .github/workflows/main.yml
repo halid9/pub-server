@@ -14,7 +14,7 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@v2
         with:
-          registry: registry.mttest.dev
+          registry: registry.smart-host.com.tr
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
 
