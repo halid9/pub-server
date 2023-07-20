@@ -14,7 +14,7 @@ jobs:
       - name: Log in to the Container registry
         uses: docker/login-action@v2
         with:
-          registry: servers.web.tr:5002
+          registry: registry.smart-host.com.tr
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
 
@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: servers.web.tr:5002/pub-server
+          images: registry.smart-host.com.tr/pub-server
           tags: |
             type=sha
             type=raw,value=latest
